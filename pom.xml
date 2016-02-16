@@ -1,12 +1,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.patrickvanderhorst.ibm.filenet</groupId>
-	<artifactId>IBM-FileNet-Maven-Install</artifactId>
+	<groupId>com.patrickvanderhorst.ibm.icm</groupId>
+	<artifactId>IBM-icm-Maven-Install</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<properties>
-		<filenet.cpe.install.path>D:/Program Files/IBM/FileNet/ContentEngine</filenet.cpe.install.path>
+		<icm.install.path>D:/Program Files/IBM/icm/ContentEngine</icm.install.path>
 	</properties>
 	<build>
 		<plugins>
@@ -17,190 +17,190 @@
 				<executions>
 					<!-- CPE Files -->
 					<execution>
-						<id>install-artifacts-filenet:Jace</id>
+						<id>install-artifacts-icm:Jace</id>
 						<goals>
 							<goal>install-file</goal>
 						</goals>
 						<phase>install</phase>
 						<configuration>
-							<file>${filenet.cpe.install.path}/lib/Jace.jar</file>
-							<groupId>com.ibm.filenet.cpe</groupId>
+							<file>${icm.install.path}/lib/Jace.jar</file>
+							<groupId>com.ibm.icm</groupId>
 							<artifactId>Jace</artifactId>
-							<version>${filenetversion}</version>
+							<version>${icmversion}</version>
 							<packaging>jar</packaging>
 							<generatePom>true</generatePom>
 						</configuration>
 					</execution>
 					<execution>
-						<id>install-artifacts-filenet:javaapi</id>
+						<id>install-artifacts-icm:javaapi</id>
 						<goals>
 							<goal>install-file</goal>
 						</goals>
 						<phase>install</phase>
 						<configuration>
-							<file>${filenet.cpe.install.path}/lib/javaapi.jar</file>
-							<groupId>com.ibm.filenet.cpe</groupId>
+							<file>${icm.install.path}/lib/javaapi.jar</file>
+							<groupId>com.ibm.icm</groupId>
 							<artifactId>javaapi</artifactId>
-							<version>${filenetversion}</version>
+							<version>${icmversion}</version>
 							<packaging>jar</packaging>
 							<generatePom>true</generatePom>
 						</configuration>
 					</execution>
 					<execution>
-						<id>install-artifacts-filenet:listener</id>
+						<id>install-artifacts-icm:listener</id>
 						<goals>
 							<goal>install-file</goal>
 						</goals>
 						<phase>install</phase>
 						<configuration>
-							<file>${filenet.cpe.install.path}/lib/listener.jar</file>
-							<groupId>com.ibm.filenet.cpe</groupId>
+							<file>${icm.install.path}/lib/listener.jar</file>
+							<groupId>com.ibm.icm</groupId>
 							<artifactId>listener</artifactId>
-							<version>${filenetversion}</version>
+							<version>${icmversion}</version>
 							<packaging>jar</packaging>
 							<generatePom>true</generatePom>
 						</configuration>
 					</execution>
 					<execution>
-						<id>install-artifacts-filenet:log4j</id>
+						<id>install-artifacts-icm:log4j</id>
 						<goals>
 							<goal>install-file</goal>
 						</goals>
 						<phase>install</phase>
 						<configuration>
-							<file>${filenet.cpe.install.path}/lib/log4j.jar</file>
-							<groupId>com.ibm.filenet.cpe</groupId>
+							<file>${icm.install.path}/lib/log4j.jar</file>
+							<groupId>com.ibm.icm</groupId>
 							<artifactId>log4j</artifactId>
-							<version>${filenetversion}</version>
+							<version>${icmversion}</version>
 							<packaging>jar</packaging>
 							<generatePom>true</generatePom>
 						</configuration>
 					</execution>
 					<execution>
-						<id>install-artifacts-filenet:p8cjares</id>
+						<id>install-artifacts-icm:p8cjares</id>
 						<goals>
 							<goal>install-file</goal>
 						</goals>
 						<phase>install</phase>
 						<configuration>
-							<file>${filenet.cpe.install.path}/lib/p8cjares.jar</file>
-							<groupId>com.ibm.filenet.cpe</groupId>
+							<file>${icm.install.path}/lib/p8cjares.jar</file>
+							<groupId>com.ibm.icm</groupId>
 							<artifactId>p8cjares</artifactId>
-							<version>${filenetversion}</version>
+							<version>${icmversion}</version>
 							<packaging>jar</packaging>
 							<generatePom>true</generatePom>
 						</configuration>
 					</execution>
 					<!-- PE files -->
 					<execution>
-						<id>install-artifacts-filenet:pe</id>
+						<id>install-artifacts-icm:pe</id>
 						<goals>
 							<goal>install-file</goal>
 						</goals>
 						<phase>install</phase>
 						<configuration>
-							<file>${filenet.cpe.install.path}/lib/pe.jar</file>
-							<groupId>com.ibm.filenet.cpe</groupId>
+							<file>${icm.install.path}/lib/pe.jar</file>
+							<groupId>com.ibm.icm</groupId>
 							<artifactId>pe</artifactId>
-							<version>${filenetversion}</version>
+							<version>${icmversion}</version>
 							<packaging>jar</packaging>
 							<generatePom>true</generatePom>
 						</configuration>
 					</execution>
 					<execution>
-						<id>install-artifacts-filenet:peResources</id>
+						<id>install-artifacts-icm:peResources</id>
 						<goals>
 							<goal>install-file</goal>
 						</goals>
 						<phase>install</phase>
 						<configuration>
-							<file>${filenet.cpe.install.path}/lib/peResources.jar</file>
-							<groupId>com.ibm.filenet.cpe</groupId>
+							<file>${icm.install.path}/lib/peResources.jar</file>
+							<groupId>com.ibm.icm</groupId>
 							<artifactId>peResources</artifactId>
-							<version>${filenetversion}</version>
+							<version>${icmversion}</version>
 							<packaging>jar</packaging>
 							<generatePom>true</generatePom>
 						</configuration>
 					</execution>
 					<execution>
-						<id>install-artifacts-filenet:pe3pt</id>
+						<id>install-artifacts-icm:pe3pt</id>
 						<goals>
 							<goal>install-file</goal>
 						</goals>
 						<phase>install</phase>
 						<configuration>
-							<file>${filenet.cpe.install.path}/lib/pe3pt.jar</file>
-							<groupId>com.ibm.filenet.cpe</groupId>
+							<file>${icm.install.path}/lib/pe3pt.jar</file>
+							<groupId>com.ibm.icm</groupId>
 							<artifactId>pe3pt</artifactId>
-							<version>${filenetversion}</version>
+							<version>${icmversion}</version>
 							<packaging>jar</packaging>
 							<generatePom>true</generatePom>
 						</configuration>
 					</execution>
 					<!-- Client Download v5.2.0 and up only -->
 					<execution>
-						<id>install-artifacts-filenet:client-download</id>
+						<id>install-artifacts-icm:client-download</id>
 						<goals>
 							<goal>install-file</goal>
 						</goals>
 						<phase>install</phase>
 						<configuration>
-							<file>${filenet.cpe.install.path}/cdapi/client-download.jar</file>
-							<groupId>com.ibm.filenet.cpe</groupId>
+							<file>${icm.install.path}/cdapi/client-download.jar</file>
+							<groupId>com.ibm.icm</groupId>
 							<artifactId>client-download</artifactId>
-							<version>${filenetversion}</version>
+							<version>${icmversion}</version>
 							<packaging>jar</packaging>
 							<generatePom>true</generatePom>
 						</configuration>
 					</execution>
 					<execution>
-						<id>install-artifacts-filenet:stax-api</id>
+						<id>install-artifacts-icm:stax-api</id>
 						<goals>
 							<goal>install-file</goal>
 						</goals>
 						<phase>install</phase>
 						<configuration>
-							<file>${filenet.cpe.install.path}/cdapi/stax-api.jar</file>
-							<groupId>com.ibm.filenet.cpe</groupId>
+							<file>${icm.install.path}/cdapi/stax-api.jar</file>
+							<groupId>com.ibm.icm</groupId>
 							<artifactId>stax-api</artifactId>
-							<version>${filenetversion}</version>
+							<version>${icmversion}</version>
 							<packaging>jar</packaging>
 							<generatePom>true</generatePom>
 						</configuration>
 					</execution>
 					<execution>
-						<id>install-artifacts-filenet:xlxpScanner</id>
+						<id>install-artifacts-icm:xlxpScanner</id>
 						<goals>
 							<goal>install-file</goal>
 						</goals>
 						<phase>install</phase>
 						<configuration>
-							<file>${filenet.cpe.install.path}/cdapi/xlxpScanner.jar</file>
-							<groupId>com.ibm.filenet.cpe</groupId>
+							<file>${icm.install.path}/cdapi/xlxpScanner.jar</file>
+							<groupId>com.ibm.icm</groupId>
 							<artifactId>xlxpScanner</artifactId>
-							<version>${filenetversion}</version>
+							<version>${icmversion}</version>
 							<packaging>jar</packaging>
 							<generatePom>true</generatePom>
 						</configuration>
 					</execution>
 					<execution>
-						<id>install-artifacts-filenet:xlxpScannerUtils</id>
+						<id>install-artifacts-icm:xlxpScannerUtils</id>
 						<goals>
 							<goal>install-file</goal>
 						</goals>
 						<phase>install</phase>
 						<configuration>
-							<file>${filenet.cpe.install.path}/cdapi/xlxpScannerUtils.jar</file>
-							<groupId>com.ibm.filenet.cpe</groupId>
+							<file>${icm.install.path}/cdapi/xlxpScannerUtils.jar</file>
+							<groupId>com.ibm.icm</groupId>
 							<artifactId>xlxpScannerUtils</artifactId>
-							<version>${filenetversion}</version>
+							<version>${icmversion}</version>
 							<packaging>jar</packaging>
 							<generatePom>true</generatePom>
 						</configuration>
 					</execution>
 				</executions>
 			</plugin>
-			<!-- Plugin below is used to read the IBM FileNet CPE version number from 
+			<!-- Plugin below is used to read the IBM icm CPE version number from 
 				your install root\ce_version.txt -->
 			<plugin>
 				<groupId>org.codehaus.gmaven</groupId>
@@ -218,13 +218,13 @@
 							</defaults>
 							<source>
 								String fileContents = new
-								File("${filenet.cpe.install.path}/ce_version.txt").getText('UTF-8')
+								File("${icm.install.path}/ce_version.txt").getText('UTF-8')
 								matcher = (fileContents =~ /(\d\.\d\.\d.\d)/)
 								String version =
 								matcher.getAt(0).getAt(1)
 
 								// Set version to be used in
-								project.properties.filenetversion = version
+								project.properties.icmversion = version
 							</source>
 						</configuration>
 					</execution>
